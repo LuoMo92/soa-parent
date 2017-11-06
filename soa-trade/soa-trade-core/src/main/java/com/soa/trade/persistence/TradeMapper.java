@@ -1,9 +1,11 @@
-package com.soa.trade.persistence;
+package com.soa.trade.persistence; 
 
 import com.soa.trade.domain.Trade;
 
 
+
 public interface TradeMapper {
-    void insert(Trade obj);
+    public void insert(Trade obj);
+    
 }
  

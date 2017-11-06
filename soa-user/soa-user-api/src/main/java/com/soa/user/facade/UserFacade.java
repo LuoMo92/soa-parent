@@ -1,7 +1,8 @@
-package com.soa.user.facade;
+package com.soa.user.facade; 
 
 
 public interface UserFacade {
-    Integer login(String userName, String password);
+    public Integer login(String userName,String password);
+    
 }
  

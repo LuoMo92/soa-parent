@@ -1,22 +1,24 @@
-package com.soa.user.facade;
-
-import com.soa.user.service.UserService;
-import org.springframework.stereotype.Service;
+package com.soa.user.facade; 
 
 import javax.annotation.Resource;
 
-/**
- * @author LiuMei
- * @date 2017-11-06.
- */
+import org.springframework.stereotype.Service;
+
+import com.soa.user.service.UserService;
+
+
 @Service
-public class UserFacadeImpl implements UserFacade {
+public class UserFacadeImpl implements UserFacade{
 
     @Resource
     private UserService userService;
-
-    public Integer login(String userName, String password) {
-        return userService.login(userName,password);
+    
+    @Override
+    public Integer login(String userName,String password) {
+	return this.userService.login(userName, password);
     }
 
+
+
 }
+ 

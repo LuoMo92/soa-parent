@@ -1,9 +1,9 @@
-package com.soa.user.persistence;
+package com.soa.user.persistence; 
 
 import org.apache.ibatis.annotations.Param;
 
 
 public interface UserMapper {
-    Integer login(@Param("userName") String userName, @Param("password") String password);
+    public Integer login(@Param("userName") String userName, @Param("password") String password);
 }
  
